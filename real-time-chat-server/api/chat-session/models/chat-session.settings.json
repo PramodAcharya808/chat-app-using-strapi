@@ -21,8 +21,8 @@
       "via": "session"
     },
     "participants": {
-      "collection": "client",
       "via": "chat_sessions",
+      "collection": "client",
       "dominant": true
     },
     "messages": {

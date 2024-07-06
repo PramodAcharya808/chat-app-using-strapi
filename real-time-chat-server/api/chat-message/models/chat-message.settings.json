@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "sender": {
-      "collection": "client",
-      "via": "chat_message"
+      "via": "chat_message",
+      "collection": "client"
     },
     "session": {
       "via": "chat_message",

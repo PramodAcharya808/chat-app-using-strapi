@@ -26,15 +26,15 @@
     },
     "role": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "chat_message": {
-      "via": "sender",
-      "model": "chat-message"
+      "model": "chat-message",
+      "via": "sender"
     },
     "chat_sessions": {
-      "via": "participants",
-      "collection": "chat-session"
+      "collection": "chat-session",
+      "via": "participants"
     }
   }
 }
