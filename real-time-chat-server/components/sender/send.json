@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sender_sends",
+  "info": {
+    "name": "send",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "client": {
+      "model": "client"
+    }
+  }
+}

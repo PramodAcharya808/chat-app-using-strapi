@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_timestamp_timestamps",
+  "info": {
+    "name": "Timestamp",
+    "icon": "calendar-day"
+  },
+  "options": {},
+  "attributes": {
+    "Timestamp": {
+      "type": "datetime"
+    }
+  }
+}

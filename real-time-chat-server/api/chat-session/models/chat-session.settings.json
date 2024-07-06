@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_sessions",
+  "info": {
+    "name": "ChatSession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sessionName": {
+      "type": "string",
+      "required": true
+    },
+    "chat_message": {
+      "model": "chat-message",
+      "via": "session"
+    },
+    "participants": {
+      "collection": "client",
+      "via": "chat_sessions",
+      "dominant": true
+    },
+    "messages": {
+      "type": "dynamiczone",
+      "components": [
+        "content.content",
+        "sender.send",
+        "timestamp.timestamp"
+      ]
+    }
+  }
+}

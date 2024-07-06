@@ -7,22 +7,27 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "ws": "node websocketServer.js"
   },
-  "devDependencies": {},
   "dependencies": {
+    "@types/socket.io": "^3.0.2",
+    "cors": "^2.8.5",
+    "knex": "0.21.18",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "sqlite3": "5.0.0",
     "strapi": "3.6.0-beta.5",
     "strapi-admin": "3.6.0-beta.5",
-    "strapi-utils": "3.6.0-beta.5",
-    "strapi-plugin-content-type-builder": "3.6.0-beta.5",
-    "strapi-plugin-content-manager": "3.6.0-beta.5",
-    "strapi-plugin-users-permissions": "3.6.0-beta.5",
-    "strapi-plugin-email": "3.6.0-beta.5",
-    "strapi-plugin-upload": "3.6.0-beta.5",
-    "strapi-plugin-i18n": "3.6.0-beta.5",
     "strapi-connector-bookshelf": "3.6.0-beta.5",
-    "knex": "0.21.18",
-    "sqlite3": "5.0.0"
+    "strapi-plugin-content-manager": "3.6.0-beta.5",
+    "strapi-plugin-content-type-builder": "3.6.0-beta.5",
+    "strapi-plugin-email": "3.6.0-beta.5",
+    "strapi-plugin-i18n": "3.6.0-beta.5",
+    "strapi-plugin-upload": "3.6.0-beta.5",
+    "strapi-plugin-users-permissions": "^3.6.0-beta.5",
+    "strapi-utils": "3.6.0-beta.5",
+    "ws": "^8.18.0"
   },
   "author": {
     "name": "A Strapi developer"

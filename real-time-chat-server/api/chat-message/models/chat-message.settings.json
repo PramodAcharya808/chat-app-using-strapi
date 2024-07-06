@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_messages",
+  "info": {
+    "name": "ChatMessage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sender": {
+      "collection": "client",
+      "via": "chat_message"
+    },
+    "session": {
+      "via": "chat_message",
+      "collection": "chat-session"
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}
